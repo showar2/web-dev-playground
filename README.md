@@ -23,10 +23,12 @@ This web application is intended to test the functionality of the github pages f
     `yarn add gh-pages --save-dev`
 
 6. Add gh-pages scripts to package.json
+    ```json
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    ```
 
-    `"predeploy": "npm run build",`
-
-    `"deploy": "gh-pages -d build",`
+    
 
 7. Push changes to the main branch. Under Settings/Pages, make sure branch points to "gh-pages" "/[root]"
 
